@@ -20,16 +20,16 @@
     "default_icon": "icon1.png"
   },
   "icons": { "16": "icon1.png",
-           "48": "icon1.png",
-          "128": "icon1.png" },
-  "permissions": [
-    "activeTab",
-    "webRequest",
-    "tabs",
-    "contentSettings",
-    "*://github.com/*/*/*/*",
-    "*://github.com/*/*/pulls/*",
-    "*://github.com/*/*/commit/*",
-    "*://github.com/*/*/pull/*/*"
-  ]
-}
+    "48": "icon1.png",
+    "128": "icon1.png" },
+    "permissions": [
+      "activeTab",
+      "webRequest",
+      "tabs",
+      "contentSettings",
+      "*://github.com/*/*/*/*",
+      "*://github.com/*/*/pulls/*",
+      "*://github.com/*/*/commit/*",
+      "*://github.com/*/*/pull/*/*"
+    ]
+  }
