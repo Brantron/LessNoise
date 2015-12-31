@@ -2,11 +2,16 @@
   "manifest_version": 2,
   "name": "Less Noise",
   "version": "0.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
   "content_scripts": [
     {
       "matches": [
+        "*://github.com/*/*/*/*",
+        "*://github.com/*/*/pulls/*",
         "*://github.com/*/*/commit/*",
-        "*://github.com/*/*/pull/*/files"
+        "*://github.com/*/*/pull/*/*"
       ],
       "js": ["jquery02.1.4.min.js", "content.js"]
     }
@@ -14,15 +19,14 @@
   "browser_action": {
     "default_icon": "icon1.png"
   },
-  "background": {
-    "scripts": ["background.js"]
-  },
   "permissions": [
     "activeTab",
-    "contextMenus",
+    "webRequest",
     "tabs",
     "contentSettings",
-    "http://*/*",
-    "https://*/*"
+    "*://github.com/*/*/*/*",
+    "*://github.com/*/*/pulls/*",
+    "*://github.com/*/*/commit/*",
+    "*://github.com/*/*/pull/*/*"
   ]
 }

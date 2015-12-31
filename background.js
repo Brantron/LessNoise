@@ -1,12 +1,10 @@
-// var toggle = false;
-// chrome.browserAction.onClicked.addListener(function(tab) {
-//   toggle = !toggle;
-//   if(toggle){
-//     chrome.browserAction.setIcon({path: "icon.png", tabId:tab.id});
-//     chrome.tabs.executeScript(tab.id, {file:"SCRIPT.user.js"});
-//   }
-//   else{
-//     chrome.browserAction.setIcon({path: "icon1.png", tabId:tab.id});
-//     chrome.tabs.executeScript(tab.id, {code:"alert()"});
-//   }
-// });
+chrome.webNavigation.onDOMContentLoaded.addListener(function(tab) {
+  alert('test')
+  console.log("Script Executed .. "); // Notification on Completion
+
+  chrome.tabs.executeScript(tab.id, {
+    "file": "content.js"
+  }, function () { // Execute your code
+    console.log("Script Executed .. "); // Notification on Completion
+  });
+});
