@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Less Noise",
-  "version": "0.1",
+  "name": "Git Diff Cleaner",
+  "version": "1.01",
   "background": {
     "scripts": ["background.js"]
   },
