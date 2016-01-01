@@ -6,6 +6,11 @@ Less Noise is a project designed to clean up diffs. To use it, simply refresh wh
 
 This project came from a discussion with a Sr. Engineer in which I wanted a sanity check on a PR. The files I was editing were improperly indented so on save, my text editor converted the file to meet our whitespace standards. I shared the link and he let me know I could append a whitespace parameter to the link to get rid of all of the fluff and review the actual changes. My first thought was how cool it would be if that could be automated....
 
+#before
+![before](before.png)
+
+#after
+![after](after.png)
 ## Installation
 
 Find me in the chrome app store!
@@ -18,7 +23,7 @@ Feel free to open a PR and start some dialogue! The first thing that comes to mi
 
 The MIT License (MIT)
 
-Copyright (c) [2016] [fullname]
+Copyright (c) [2016]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
